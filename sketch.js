@@ -93,11 +93,11 @@ function mousePressed() {
 }
 
 function draw() {
-  background("#f5e7ca");
+  background(51);
   Engine.update(engine);
 
   //draw pegs
-  fill("#5a2a0a");
+  fill(255);
   noStroke();
   for (let peg of pegs) {
     circle(peg.position.x, peg.position.y, PEG_RADIUS * 2);
@@ -118,7 +118,7 @@ function draw() {
   }
   //draw scores
   rectMode(CENTER);
-  fill("#2e2108");
+  fill(255);
   textAlign(CENTER, CENTER);
   textSize(16);
   for (let i = 0; i < SCORES.length; i++) {
@@ -127,13 +127,13 @@ function draw() {
   }
 
   //draw bin djividers
-  fill("#5a2a0a");
+  fill(255);
   rectMode(CENTER);
   for (let bin of bins) {
     rect(bin.position.x, bin.position.y, 10, 120);
   }
   //drow balls and check scoring
-  fill("#28a499");
+  fill(255, 200, 0);
   for (let i = balls.length - 1; i >= 0; i--) {
     let ball = balls[i];
     circle(ball.position.x, ball.position.y, BALL_RADIUS * 2);
@@ -146,7 +146,7 @@ function draw() {
     }
   }
   //draw total score
-  fill("#28a499");
+  fill(255);
   textSize(24);
   textAlign(LEFT, TOP);
   text(`Score: ${totalScore}`, 20, 30);

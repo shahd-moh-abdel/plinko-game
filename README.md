@@ -54,9 +54,9 @@ The game can be customized by modifying these constants:
 
 Color scheme:
 
-- Background: `#f5e7ca`
-- Pegs: `#2e2108`
-- Balls: `#28a499`
+- Background: 51
+- Pegs: `#fff`
+- Balls: 255, 200 0
 - Bins: Alternating `#f7865c` and `#f16e3a`
 
 ## 🔧 Physics Configuration
